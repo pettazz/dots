@@ -1,0 +1,1 @@
+/Users/pope/.zshrc
