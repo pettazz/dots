@@ -1,0 +1,49 @@
+{
+  "name": "Nostromo Ayu Overlay",
+  "author": "",
+  "globals": {
+    "background": "#10141c",
+    "foreground": "#A5FBFF",
+    "caret": "#A5FBFF",
+    "block_caret": "#A5FBFF",
+    "line_highlight": "#090c10",
+    "gutter": "#10141c",
+    "gutter_foreground": "#3a4c4e",
+    "selection": "#252d41",
+    "shadow": "#000"
+  },
+  "rules": [
+    {
+      "foreground": "#93A5B8",
+      "scope": "comment"
+    },
+    {
+      "foreground": "#3df2ad",
+      "scope": "constant"
+    },
+    {
+      "foreground": "#dd513c",
+      "scope": "keyword, storage.modifier, storage.type"
+    },
+    {
+      "foreground": "#3df2ad",
+      "scope": "meta.function"
+    },
+    {
+      "foreground": "#4DDCFF",
+      "scope": "meta.class"
+    },
+    {
+      "foreground": "#3f9bbc",
+      "scope": "string"
+    },
+    {
+      "foreground": "#4DDCFF",
+      "scope": "constant.numeric"
+    },
+    {
+      "foreground": "#4DDCFF",
+      "scope": "meta.type"
+    }
+  ]
+}
