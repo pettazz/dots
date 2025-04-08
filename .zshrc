@@ -5,6 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# zsh history size
+HISTSIZE=9999999
+SAVEHIST=$HISTSIZE
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -79,10 +83,17 @@ export EDITOR='emacs'
 # enable homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# pnpm
+export PNPM_HOME="/Users/pope/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
 #Brewby rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 #source $HOME/.zshenv
 eval "$(rbenv init - zsh)"
 
 export TODOTXT_DEFAULT_ACTION=ls
-alias todo="todo.sh -c"
+alias todo="todo.sh -ct"
