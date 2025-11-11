@@ -1,0 +1,25 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Nick Pettazzoni
+	email = github@n.pettazz.com
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = false
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[include]
+    # get these from https://raw.githubusercontent.com/dandavison/delta/main/themes.gitconfig
+    path = ~/.local/share/delta/themes.gitconfig
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    # features = calochortus-lyallii
+    features = weeping-willow
+    dark = true
+    side-by-side = true
+    hyperlinks = true
+[merge]
+    conflictStyle = zdiff3
+

@@ -2,6 +2,7 @@
 
 for f in ".zshrc"\
          ".todo.cfg"\
+         ".gitconfig"\
          ".timewarrior/timewarrior.cfg"\
          "Library/Application Support/com.mitchellh.ghostty/config"\
          "Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings"\
